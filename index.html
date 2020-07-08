@@ -17,19 +17,19 @@
         <h1>Clock developped by Maeve ♡#0666 and F2Ville#7992 !!!</h1>
         <p>(Click to close ^^)</p>
     </div>
-    <div id="container" onclick="showDigit()">
+    <div id="container" onclick="showDigit();i=1;">
         <div id="clock">
-            <img src="./clock.png" alt="" draggable="false">
-            <div id="middle"></div>
-            <div id="hours"></div>
-            <div id="minutes"></div>
-            <div id="seconds"></div>
+            <img src="./clock.png" alt="" id="clock-bg">
+            <div id="middle" class="respNeedle"></div>
+            <div id="hours" class="respNeedle"></div>
+            <div id="minutes" class="respNeedle"></div>
+            <div id="seconds" class="respNeedle"></div>
         </div>
         <div id="digiTime">
             <h1 id="digiTimeTxt">00:00:00</h1>
-            <button id="changeToPhys" onclick="showPhysic()">PRESS TO CHANGE</button>
         </div>
     </div>
+    <button id="changeToPhys" onfocus="showPhysic();i=0;">PRESS TO CHANGE</button>
     <img src="./sign-neon.gif" id="sayhtchange" alt="">
     <script src="./clock.js"></script>
 </body>

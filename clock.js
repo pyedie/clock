@@ -4,6 +4,7 @@ let popup = document.querySelector("#popup")
 let hours = document.querySelector("#hours")
 let minutes = document.querySelector("#minutes")
 let seconds = document.querySelector("#seconds")
+let digiBtn = document.querySelector("#changeToPhys")
 let i = 0
 
 function closePopup() {
@@ -12,13 +13,15 @@ function closePopup() {
 
 function showDigit() {
     clock.style.visibility = "hidden"
+    digiBtn.style.visibility = "visible"
     digiClock.style.visibility = "visible"
     document.body.style.backgroundColor = '#1d3557'
 }
 
 function showPhysic() {
-    clock.style.visibility = "visible"
+    digiBtn.style.visibility = "hidden"
     digiClock.style.visibility = "hidden"
+    clock.style.visibility = "visible"
     document.body.style.backgroundColor = '#457b9d'
 }
 
