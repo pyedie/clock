@@ -1,6 +1,41 @@
+
 /* FONTS */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* DETECT MOBILE DEVICE */
+
+@media only screen and (max-device-width: 768px) {
+    #clock-bg {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        width: 35vh;
+        height: 35vh;
+    }
+    #clock {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1faee;
+        width: 35vh;
+        height: 35vh;
+        border-radius: 50%;
+        box-shadow: inset rgba(0, 0, 0, 0.363) 0 0 15px;
+        border: 2vw solid #f1faee;
+        cursor: pointer;
+    }
+    #sayhtchange {
+        z-index: 15;
+        position: absolute;
+        bottom: 15px;
+        width: 80vw;
+        opacity: 0.9;
+    }
+}
 
 /* GENERAL */
 * {
@@ -26,6 +61,41 @@ a {
 }
 
 /* CLOCK */
+
+@media only screen and (min-width: 768px) {
+    #clock-bg {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        width: 35vw;
+        height: 35vw;
+    }
+
+    #clock {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f1faee;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+        box-shadow: inset rgba(0, 0, 0, 0.363) 0 0 15px;
+        border: 2vw solid #f1faee;
+        cursor: pointer;
+    }
+
+    #sayhtchange {
+        z-index: 15;
+        position: absolute;
+        bottom: 15px;
+        width: 20vw;
+        opacity: 0.9;
+    }    
+    
+}
 
 #popup {
     background-color: #111b29a9;
@@ -77,60 +147,66 @@ a {
 
 #digiTime {
     visibility: hidden;
-    font-size: 140px;
+    font-size: 10vw;
     font-family: 'Bebas Neue', cursive;
     text-shadow: rgba(0, 162, 255, 0.897) 0 0 20px;
 }
 
 #changeToPhys {
-    margin-top: 100px;
-}
-
-#clock {
-    position: absolute;
+    visibility: hidden;
     display: flex;
+    position: absolute;
+    border-style: none;
     justify-content: center;
     align-items: center;
-    background-color: #f1faee;
-    height: 700px;
-    width: 700px;
-    border-radius: 50%;
-    box-shadow: inset rgba(0, 0, 0, 0.363) 0 0 15px;
-    border: 40px solid #f1faee;
+    margin-top: 45vh;
+    width: 150px;
+    height: 50px;
+    background-color: #457b9d;
+    color: #f1faee;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.644) 0 0 20px;
+    border-radius: 5px;
+    transition: background-color .25s ease, box-shadow .25s ease, color .25s ease;
+    cursor: pointer;
 }
+#changeToPhys:hover {
+    background-color: #ffffff;
+    color: #1d3557;
+    box-shadow: rgba(0, 162, 255, 0.897) 0 0 17px;
+}
+#changeToPhys:focus {
+    box-shadow: inset rgba(0, 162, 255, 0.897) 0 0 17px;
+}
+
 #middle {
     position: absolute;
     background-color: #111b29;
-    width: 40px;
-    height: 40px;
+    width: 5%;
+    height: 5%;
     border-radius: 50%;
     z-index: 10;
 }
 #hours {
     position: absolute;
     background: linear-gradient(#1d3557 50%, #1d355700 50%);
-    width: 23px;
-    height: 340px;
+    width: 4%;
+    height: 40%;
     border-radius: 10px;
 }
 #minutes {
     position: absolute;
     background: linear-gradient(#457b9d 50%, #1d355700 50%);
-    width: 16px;
-    height: 460px;
+    width: 3%;
+    height: 58%;
     border-radius: 10px;
 }
 #seconds {
     position: absolute;
     background: linear-gradient(#e63946 50%, #1d355700 50%);
-    width: 10px;
-    height: 560px;
+    width: 1.5%;
+    height: 80%;
     border-radius: 10px;
-}
-#sayhtchange {
-    z-index: 15;
-    position: absolute;
-    bottom: 15px;
-    width: 400px;
-    opacity: 0.9;
 }
