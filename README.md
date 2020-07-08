@@ -1,7 +1,7 @@
 # Clock
 
 *Clock*  is a **website based** clock.
-If you want a preview before download, go on the [demo website]().
+If you want a preview before download, go on the [demo website](https://maevelaouf.github.io/clock/).
 
 ### Installation
 
