@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.6.5/mousetrap.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</head>
+<body>
+    <div id="mainTitle">
+        <h1>Clock</h1>
+        <p>by Maeve ♡#0666 & F2Ville#7992</p>
+    </div>
+    <div id="popup" onclick="closePopup()">
+        <h1>Clock developped by Maeve ♡#0666 and F2Ville#7992 !!!</h1>
+        <p>(Click to close ^^)</p>
+    </div>
+    <div id="container" onclick="showDigit()">
+        <div id="clock">
+            <img src="./clock.png" alt="" draggable="false">
+            <div id="middle"></div>
+            <div id="hours"></div>
+            <div id="minutes"></div>
+            <div id="seconds"></div>
+        </div>
+        <div id="digiTime">
+            <h1 id="digiTimeTxt">00:00:00</h1>
+            <button id="changeToPhys" onclick="showPhysic()">PRESS TO CHANGE</button>
+        </div>
+    </div>
+    <img src="./sign-neon.gif" id="sayhtchange" alt="">
+    <script src="./clock.js"></script>
+</body>
+</html>

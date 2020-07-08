@@ -1,0 +1,136 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* GENERAL */
+* {
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+body {
+    background-color: #457b9d;
+    color: #f1faee;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 1s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #f1faee;
+}
+
+/* CLOCK */
+
+#popup {
+    background-color: #111b29a9;
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    cursor: pointer;
+}
+#popup h1 {
+    text-shadow: rgb(2, 120, 255) 0 0 20px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#popup p {
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainTitle {
+    z-index: 15;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+#mainTitle h1 {
+    font-size: 50px;
+    text-shadow: rgba(0, 33, 59, 0.63) 0 0 10px;
+}
+#mainTitle p {
+    color: #60b1e4;
+    font-style: italic;
+}
+
+#container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#digiTime {
+    visibility: hidden;
+    font-size: 140px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: rgba(0, 162, 255, 0.897) 0 0 20px;
+}
+
+#changeToPhys {
+    margin-top: 100px;
+}
+
+#clock {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1faee;
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    box-shadow: inset rgba(0, 0, 0, 0.363) 0 0 15px;
+    border: 40px solid #f1faee;
+}
+#middle {
+    position: absolute;
+    background-color: #111b29;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 10;
+}
+#hours {
+    position: absolute;
+    background: linear-gradient(#1d3557 50%, #1d355700 50%);
+    width: 23px;
+    height: 340px;
+    border-radius: 10px;
+}
+#minutes {
+    position: absolute;
+    background: linear-gradient(#457b9d 50%, #1d355700 50%);
+    width: 16px;
+    height: 460px;
+    border-radius: 10px;
+}
+#seconds {
+    position: absolute;
+    background: linear-gradient(#e63946 50%, #1d355700 50%);
+    width: 10px;
+    height: 560px;
+    border-radius: 10px;
+}
+#sayhtchange {
+    z-index: 15;
+    position: absolute;
+    bottom: 15px;
+    width: 400px;
+    opacity: 0.9;
+}
